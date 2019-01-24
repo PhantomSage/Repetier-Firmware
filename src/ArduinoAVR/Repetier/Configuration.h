@@ -67,9 +67,9 @@
 #define MIXING_EXTRUDER 0
 
 #define DRIVE_SYSTEM 3
-#define XAXIS_STEPS_PER_MM 80
-#define YAXIS_STEPS_PER_MM 80
-#define ZAXIS_STEPS_PER_MM 80
+#define XAXIS_STEPS_PER_MM 100
+#define YAXIS_STEPS_PER_MM 100
+#define ZAXIS_STEPS_PER_MM 100
 #define EXTRUDER_FAN_COOL_TEMP 50
 #define PDM_FOR_EXTRUDER 0
 #define PDM_FOR_COOLER 0
@@ -332,7 +332,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_HOME_DIR 1
 #define X_MAX_LENGTH 200
 #define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 200
+#define Z_MAX_LENGTH 230
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -512,10 +512,10 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_X_OFFSET 0
 #define Z_PROBE_Y_OFFSET 0
 #define Z_PROBE_WAIT_BEFORE_TEST 0
-#define Z_PROBE_SPEED 5
+#define Z_PROBE_SPEED 3
 #define Z_PROBE_XY_SPEED 150
-#define Z_PROBE_SWITCHING_DISTANCE 2
-#define Z_PROBE_REPETITIONS 3
+#define Z_PROBE_SWITCHING_DISTANCE 3
+#define Z_PROBE_REPETITIONS 4
 #define Z_PROBE_USE_MEDIAN 0
 #define Z_PROBE_HEIGHT 0.18
 #define Z_PROBE_DELAY 0
@@ -527,11 +527,11 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_AUTOLEVEL 1
 #define FEATURE_SOFTWARE_LEVELING 0
 #define Z_PROBE_X1 0
-#define Z_PROBE_Y1 85
-#define Z_PROBE_X2 73.61
-#define Z_PROBE_Y2 -42.5
-#define Z_PROBE_X3 -73.61
-#define Z_PROBE_Y3 -42.5
+#define Z_PROBE_Y1 70
+#define Z_PROBE_X2 -35
+#define Z_PROBE_Y2 -60
+#define Z_PROBE_X3 35
+#define Z_PROBE_Y3 -60
 #define BED_LEVELING_METHOD 0
 #define BED_CORRECTION_METHOD 0
 #define BED_LEVELING_GRID_SIZE 5
@@ -579,8 +579,8 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 0
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "DLT-180 PS1.0.4"
-#define UI_PRINTER_COMPANY "He3D PS1.0.4"
+#define UI_PRINTER_NAME "DLT-180 PS1.1.2"
+#define UI_PRINTER_COMPANY "He3D E3D"
 #define UI_PAGES_DURATION 3000
 #define UI_SPEEDDEPENDENT_POSITIONING 1
 #define UI_DISABLE_AUTO_PAGESWITCH 1
@@ -595,8 +595,8 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_BEEPER 1
 #define CASE_LIGHTS_PIN -1
 #define CASE_LIGHT_DEFAULT_ON 1
-#define UI_START_SCREEN_DELAY 1000
-#define UI_DYNAMIC_ENCODER_SPEED 1
+#define UI_START_SCREEN_DELAY 2000
+#define UI_DYNAMIC_ENCODER_SPEED 0
         /**
 Beeper sound definitions for short beeps during key actions
 and longer beeps for important actions.
@@ -628,9 +628,9 @@ Values must be in range 1..255
     "baudrate": 115200,
     "bluetoothSerial": -1,
     "bluetoothBaudrate": 115200,
-    "xStepsPerMM": 80,
-    "yStepsPerMM": 80,
-    "zStepsPerMM": 80,
+    "xStepsPerMM": 100,
+    "yStepsPerMM": 100,
+    "zStepsPerMM": 100,
     "xInvert": "1",
     "x2Invert": 0,
     "xInvertEnable": 0,
@@ -754,7 +754,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 200,
+    "zLength": 230,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -850,8 +850,8 @@ Values must be in range 1..255
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
     "featureController": 2,
-    "uiPrinterName": "DLT-180 PS1.0.4",
-    "uiPrinterCompany": "He3D PS1.0.4",
+    "uiPrinterName": "DLT-180 PS1.1.2",
+    "uiPrinterCompany": "He3D E3D",
     "uiPagesDuration": 3000,
     "uiHeadline": "",
     "uiDisablePageswitch": "1",
@@ -959,26 +959,26 @@ Values must be in range 1..255
     "zProbeXOffset": 0,
     "zProbeYOffset": 0,
     "zProbeWaitBeforeTest": "0",
-    "zProbeSpeed": 5,
+    "zProbeSpeed": 3,
     "zProbeXYSpeed": 150,
     "zProbeHeight": 0.18,
     "zProbeStartScript": "M340 P0 S680",
     "zProbeFinishedScript": "M340 P0 S1500",
     "featureAutolevel": "1",
     "zProbeX1": 0,
-    "zProbeY1": 85,
-    "zProbeX2": 73.61,
-    "zProbeY2": -42.5,
-    "zProbeX3": -73.61,
-    "zProbeY3": -42.5,
-    "zProbeSwitchingDistance": 2,
-    "zProbeRepetitions": 3,
+    "zProbeY1": 70,
+    "zProbeX2": -35,
+    "zProbeY2": -60,
+    "zProbeX3": 35,
+    "zProbeY3": -60,
+    "zProbeSwitchingDistance": 3,
+    "zProbeRepetitions": 4,
     "zProbeMedian": "0",
     "zProbeEveryPoint": "",
     "sdSupport": "0",
     "sdCardDetectPin": -1,
     "sdCardDetectInverted": "0",
-    "uiStartScreenDelay": 1000,
+    "uiStartScreenDelay": 2000,
     "xEndstopBackMove": 5,
     "yEndstopBackMove": 5,
     "zEndstopBackMove": 2,
@@ -1047,7 +1047,7 @@ Values must be in range 1..255
     "servo1StartPos": -1,
     "servo2StartPos": -1,
     "servo3StartPos": -1,
-    "uiDynamicEncoderSpeed": "1",
+    "uiDynamicEncoderSpeed": "0",
     "uiServoControl": 1,
     "killIfSensorDefect": "0",
     "jamSteps": 220,
